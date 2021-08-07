@@ -7,22 +7,15 @@ lazy val root = crossProject(JSPlatform, JVMPlatform)
     version := "$version$",
     versionScheme := Some("$version-scheme$"),
 
-    scalaVersion := "3.0.0-RC1",
-    scalacOptions ++= Seq(
-      "-Ycheck-init",
-      "-Yindent-colons"
-    )
+    scalaVersion := "3.0.1",
   )
   .jsSettings(
     scalaJSUseMainModuleInitializer := true,
 
     libraryDependencies ++= Seq(
-      "org.getshaka" %%% "shaka" % "0.2.0",
-      "org.getshaka" %%% "native-converter" % "0.4.0"
+      "org.getshaka" %%% "shaka" % "0.3.1"
     )
   )
   .jvmSettings(
-    libraryDependencies ++= Seq(
-      "io.vertx" % "vertx-web" % "4.0.3"
-    )
+    
   )
