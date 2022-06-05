@@ -7,13 +7,13 @@ lazy val root = crossProject(JSPlatform, JVMPlatform)
     version := "$version$",
     versionScheme := Some("$version-scheme$"),
 
-    scalaVersion := "3.0.1",
+    scalaVersion := "3.1.2",
   )
   .jsSettings(
     scalaJSUseMainModuleInitializer := true,
 
     libraryDependencies ++= Seq(
-      "org.getshaka" %%% "shaka" % "0.3.1"
+      "org.getshaka" %%% "shaka" % "0.5.0"
     )
   )
   .jvmSettings(
