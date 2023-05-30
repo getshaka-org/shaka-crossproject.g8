@@ -1,4 +1,5 @@
 import org.getshaka.shaka.*
+import org.scalajs.dom.document
 
 class App extends Component:
   private val user = User("hello", true, 69)
@@ -13,4 +14,4 @@ class App extends Component:
         onclick(_ => println(user.toJson))
         t"Click to print User json to the console"
 
-@main def launchApp(): Unit = render(App())
+@main def launchApp(): Unit = render(App(), document.body)
