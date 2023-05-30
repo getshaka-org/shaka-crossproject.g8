@@ -1,5 +1,6 @@
 package com.example.app
 
+import com.example.shared.User
 import org.getshaka.shaka.*
 import org.scalajs.dom.document
 
