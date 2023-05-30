@@ -1,3 +1,5 @@
+package com.example.app
+
 import org.getshaka.shaka.*
 import org.scalajs.dom.document
 
