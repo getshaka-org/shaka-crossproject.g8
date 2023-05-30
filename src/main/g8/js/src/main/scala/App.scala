@@ -13,4 +13,4 @@ class App extends Component:
         onclick(_ => println(user.toJson))
         t"Click to print User json to the console"
 
-@main def launchApp(): Unit = shaka.render(App())
+@main def launchApp(): Unit = render(App())
