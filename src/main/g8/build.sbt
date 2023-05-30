@@ -17,5 +17,8 @@ lazy val root = crossProject(JSPlatform, JVMPlatform)
     )
   )
   .jvmSettings(
-    
+    // just stubs so that `derives NativeConverter` works in `shared` directory
+    libraryDependencies ++= Seq(
+      "org.getshaka" %% "native-converter" % "0.9.0"
+    )
   )
